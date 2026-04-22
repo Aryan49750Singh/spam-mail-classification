@@ -1,14 +1,30 @@
 # Spam Mail Classification
 
+## Live Demo
+
+A deployed web application is available to test the model in real-time:
+
+🔗 https://spam-mail-classification-2ae3juzvbnpsylchxd8qrj.streamlit.app/
+
+---
+
 ## Overview
 
-This project builds a machine learning model to classify emails as **spam** or **ham (not spam)** using Natural Language Processing techniques. The goal is to accurately detect unwanted messages and improve filtering systems.
+This project builds a machine learning model to classify emails as **spam** or **ham (not spam)** using Natural Language Processing techniques.
+The model is deployed as an interactive web application for real-time predictions.
+
+---
+
+## Web Application
+
+The project is deployed using Streamlit.
+Users can enter a message and instantly receive a prediction indicating whether the message is spam or not.
 
 ---
 
 ## Dataset
 
-The dataset contains labeled email messages with two categories:
+The dataset contains labeled email messages categorized as:
 
 * **Spam** – Unwanted or promotional messages
 * **Ham** – Legitimate emails
@@ -29,7 +45,7 @@ The dataset contains labeled email messages with two categories:
 
 ### Model
 
-* **Logistic Regression** used for classification
+* Logistic Regression
 
 ---
 
@@ -47,7 +63,7 @@ The dataset contains labeled email messages with two categories:
 
 * High precision indicates very low false positives
 * Moderate recall suggests some spam messages are missed
-* Model performs well and is suitable for basic spam detection
+* Model performs well for practical spam detection tasks
 
 ---
 
@@ -56,10 +72,11 @@ The dataset contains labeled email messages with two categories:
 * Python
 * NumPy, Pandas
 * Scikit-learn
+* Streamlit
 
 ---
 
-## How to Run
+## How to Run Locally
 
 1. Clone the repository
 2. Install dependencies
@@ -67,21 +84,24 @@ The dataset contains labeled email messages with two categories:
    ```bash
    pip install -r requirements.txt
    ```
-3. Open the notebook and run all cells
+3. Run the app
+
+   ```bash
+   streamlit run app.py
+   ```
 
 ---
 
 ## Future Improvements
 
-* Use advanced models (Naive Bayes, SVM, XGBoost)
 * Improve recall using hyperparameter tuning
-* Deploy as a web application
+* Experiment with advanced models (Naive Bayes, SVM, XGBoost)
+* Enhance UI/UX of the web application
 
 ---
 
 ## Conclusion
 
-This project demonstrates an end-to-end NLP pipeline including preprocessing, feature extraction, model training, and evaluation for spam classification.
+This project demonstrates an end-to-end machine learning pipeline, including data preprocessing, feature extraction, model training, evaluation, and deployment as a web application.
 
 ---
-
