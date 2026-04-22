@@ -23,4 +23,4 @@ if st.button("Predict"):
         if prediction[0] == 1:
             st.error("🚨 Spam Message")
         else:
-            st.success("✅ Not Spam (Ham)")
+            st.success("✅ Ham Message)")
