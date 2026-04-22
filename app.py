@@ -20,7 +20,7 @@ if st.button("Predict"):
         transformed_input = vectorizer.transform([user_input])
         prediction = model.predict(transformed_input)
 
-        if prediction[0] == 0:
+        if prediction[0] == 1:
             st.error("🚨 Spam Message")
         else:
             st.success("✅ Not Spam (Ham)")
